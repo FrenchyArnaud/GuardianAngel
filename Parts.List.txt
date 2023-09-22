@@ -1,1 +1,22 @@
+#PARTS LIST FOR BUILD#
 
+You will need a few parts, all are available on ebay or amazon for pocket change. The complete build should not cost you more than £25.
+
+You will need the following devices for the minimum build: 
+- A microcontroller (Arduino NANO, or UNO but NANO is enough)
+- A GSM module (SIM800L V2. It is IMPORTANT to use the V2 variant AND to choose a seller that provides an actual antenna rather than the small helicoidal coil) 
+- A DC-DC Step-Down Power Supply Converter Module 12V to 5V Charger (MP2307DN) 
+
+- A rain detector (LM393 / FR-04  50mm*40mm)
+- A gyroscope (MPU6050)
+
+You will also need the following parts for a complete build:
+
+- A vibration detector (SW420)
+- A barometer (BMP180)
+- A temp/humidity sensor (DHT11)
+
+Should you want to implement the OLED display, you will finally need 
+- A  Multiplexer Breakout Board (TCA9548A I2C IIC 8 Channel) 
+- A display (128X64 0.96" OLED I2C IIC, SSD1306)
+    NB: you can avoid using a TCA9548A if you make sure beforehand to choose an OLED with a different address than 0X3C, already used by the GSM module. However, changing this address requires microsoldering and the TCA allows for future implementation of extra I2C devices (for an extra cost under £5) so it is the prefered solution. 
