@@ -6,6 +6,7 @@ You will need the following devices for the minimum build:
 - A microcontroller (Arduino NANO, or UNO but NANO is enough)
 - A GSM module (SIM800L V2. It is IMPORTANT to use the V2 variant AND to choose a seller that provides an actual antenna rather than the small helicoidal coil) 
 - A DC-DC Step-Down Power Supply Converter Module 12V to 5V Charger (MP2307DN) 
+- A MicroSD Memory Card Adapter (SDTFSPI)
 
 - A rain detector (LM393 / FR-04  50mm*40mm)
 - A gyroscope (MPU6050)
