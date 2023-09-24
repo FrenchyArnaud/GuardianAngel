@@ -1,1 +1,51 @@
+      #### WIP, DO NOT TRUST ####
+
+      ## NB : YOU SHOULD HAVE MADE SURE YOU HAVE A 2G COMPATIBLE, ACTIVATED SIM CARD BEFORE BEGINING PROTOTYPING. ##
+      ## WHEN YOU HAVE ALL THE COMPONENTS BEFORE YOU, SIMPLY PROCEED WITH THE FOLLOWING CONNEXIONS ONE LINE AT A TIME ##
+      ## THIS IS ASSUMING YOU ARE ASSEMBLING ON A BREADBOARD BEFORE PERMANENT BUILD ##
+      ## BB = BreadBoard ##
+      ## MC = Microcontroller ##
+      ## NB : do NOT plug the 12V in. You do NOT want the prototype powered on during assembly. ##
+
+OUT - step down module > GND BB
+OUT + step down module > POSITIVE BB
+IN - step down module > NEG WIRE OF 12V supply (must be capable of 1500mA mini)
+IN + step down module > POS wire OF 12V supply 
+Plug MC on BB
+GND MC > GND BB
+
+Insert activated SIM card in GSM module. 
+      ## NB: you really want to test the card in a phone before anything. Make sure you disabled all SIM locks, PIN etc. ##
+      ## NB: once plugged, the GSM labels can't be read as they are facing down. Note the labels before plugging in. ## 
+
+Plug GSM module on BB
+      ## NB: Make SURE the pins of the GSM module are not in line with the pins of the MC ##
+
+GND GSM > GND BB
+5V GSM > POS BB
+RX GSM > MC pin 10
+TX GSM > MC pin 11
+PLUG MC to USB, load "Test.GSM.Link.ino" in Arduino IDE
+Edit the relevant line (your phone number)
+      ## NB : the phone number MUST be in international format. For instance, in the UK, 07123456789 is equivallent to 0044 7 123456789 (spaces only for clarity, do not put spaces in the file) where 0044 is the country code, 7 means mobile network and 123456789 is the actual SIM id. The international format uses "+" instead of the double zero so the number you should use is "+447123456789" . Of course, use your own country code! If your format is wrong you will be able to SEND messages but not to receive them. ##
+
+Flash the controller. ("compile and upload")
+The serial monitor of the IDE should read "AP Guardian, ready to test."
+Power up the 12V supply. 
+The power LED of the GSM module should light up permanently.
+Wait for the secondary LED (Network) to flash once every 3 seconds.
+      ## NB : if the led flashes 1x /sec continuously, the SIM is not registered on the network.
+          In that case, just wait 15 minutes.
+          If it is still not registered after 15 minutes, check SIM orientation and/or test it in a phone. ##
+      ## NB :  if the led flashes 6x or 7x /sec, then the GSM power led turns off and reboots, your power supply is too weak. Note that you need at least 1500mA and up to 2500mA. Upgrade your 12V supply and try again. ## 
+
+Press the reset button of MC. 
+If your connexions are valid and the network connexion active, you should receive an SMS reading "GuardianAngel : Test Successful, please unplug 12V supply now."
+The serial monitor of the IDE should read "AP Guardian, ready to test.", followed by a network antenna report like "AT+CMIP = 1, OK" (example. It can be different.)
+      ## NB : Using the GPRS network slows traffic noticeably, if your SMS is not delivered immediately wait at least 5 mins before assuming failure. ##
+
+UNPLUG 12V to power the GSM module OFF.
+DISCONNECT USB.
+      ## NB : DO NOT DISCONNECT ANYTHING ELSE ON THE BB. ##
+
 
