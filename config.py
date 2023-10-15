@@ -156,19 +156,19 @@ priorityAlert = "L"
 # LOW does not repeat and obeys the SILENT rule of the phone.
 # HIGH sends an ALARM, LOW sends an ALERT
 
-yourEmail = "frenchyarnaud@gmail.com"
+yourEmail = "*********@gmail.com"
 # STRONGLY RECOMMEND CREATING AN EMAIL ACCOUNT SPECIFICALLY FOR THIS APP
 # MUST BE A GMAIL ACCOUNT, WITH APP PASSWORD ENABLED,
 # SEE : https://support.google.com/mail/?p=InvalidSecondFactor
 
-password = 'fqxo sjoh hnto raki'
+password = 'tyui sjoh dfgh hjkl'
 # APP PASSWORD ENABLED FOR GMAIL ACCOUNT
 # SEE : https://support.google.com/mail/?p=InvalidSecondFactor
 
-lowPriorityAlertEmail = "5bi3shodgt@pomail.net"
+lowPriorityAlertEmail = "5fghhodgt@pomail.net"
 # LOW PRIORITY >>> LOW AND HIGH CAN BE THE SAME
 
-highPriorityAlertEmail = "ib51porqqq@pomail.net"
+highPriorityAlertEmail = "ibsdfffq@pomail.net"
 # HIGH PRIORITY  >>> LOW AND HIGH CAN BE THE SAME
 
 subject00 = "Telescope Alert"
