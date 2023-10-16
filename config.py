@@ -16,26 +16,6 @@
 # A fresh copy of this file will be generated 
 
 
-########################################################################
-#### >>>      Guardian Angel V1.00                              <<< ####
-#### >>>      Author: Arnaud "Frenchy" Prevot                   <<< ####
-#### >>>      https://github.com/FrenchyArnaud/GuardianAngel    <<< ####
-########################################################################
-
-########################################################################
-#### >>>        CONFIGURATION FILE                              <<< ####
-#### >>>        TUNE TO YOUR NEEDS                              <<< ####
-########################################################################
-
-
-# If you mess up badly, 
-# simply delete this file
-# and reboot the App.
-# A fresh copy of this file will be generated 
-
-
-
-
                 #### >>>#########################<<< ####
                 #### >>>     SETTING UP LIMITS   <<< ####
                 #### >>>#########################<<< ####
